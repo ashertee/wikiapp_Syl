@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{request.locale_name}}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pyramid web application">
+    <meta name="author" content="Pylons Project">
+
+    <title>Wikipedia Search App</title>
+    <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>Hi there, Welcome to Wiki Search</h1>
+    </p> 
+	<h1>Thank you for using our service</h1>   <form action='/'>
+    <input type='text' id='query' placeholder='Type search term here' name='query'/>
+    <input type='submit' name='submit'/>
+    <input type='button' id='clear' value='Reset'/>
+    </form>
+    </div>
+    <br/>
+    <div id='output'>
+    <h2>{{query | safe}}</h2>
+    {{result | safe}}
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/script.js"></script>
+
+  </body>
+</html>
